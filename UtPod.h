@@ -25,7 +25,7 @@ class UtPod
       static const int SUCCESS = 0;
       static const int NO_MEMORY = -1;
       static const int NOT_FOUND = -2;
-      unsigned int currentTime =  (unsigned)time(0);
+
 
       struct SongNode
       {

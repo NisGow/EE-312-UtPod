@@ -105,6 +105,7 @@ You will want to do more complete testing.
         cout << "Shuffled List  \n"<< endl;
         t.showSongList();
         t.sortSongList();
+        cout << "Sorted  List  \n"<< endl;
         t.showSongList();
 
 
@@ -133,6 +134,35 @@ You will want to do more complete testing.
         t.removeSong(s22);
         t.showSongList();
 
+        cout << "Testing UtPod with similar songs/ artists"<< endl;
+
+        Song s14("Mansae", "Got7", 35);
+        result = t.addSong(s14);
+        cout << "add result = " << result << endl;
+
+        Song s24("Fly", "Got7", 17);
+        result = t.addSong(s24);
+        cout << "add result = " << result << endl;
+
+        Song s34("DNA", "Lamar", 300);
+        result = t.addSong(s34);
+        cout << "add result = " << result << endl;
+
+        Song s44("DNA ", "bTS", 50);
+        result = t.addSong(s44);
+        cout << "add result = " << result << endl;
+
+        Song s54("Beatles", "Hey Jude5", 40);
+        result = t.addSong(s54);
+        cout << "add result = " << result << '\n'<< endl;
+
+        cout << "Song List \n"<< endl;
+        t.showSongList();
+        t.shuffle();
+        cout << "Shuffled List  \n"<< endl;
+        t.showSongList();
+        cout << "Sorted  List  \n"<< endl;
+        t.showSongList();
 
 
 
